@@ -1,0 +1,5 @@
+---
+layout: boomj/default
+---
+
+# Home
