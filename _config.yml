@@ -2,7 +2,7 @@ title: boomj
 email: manfred@simpligility.com
 description: >- # this means to ignore newlines until "baseurl:"
   A template static site setup using `Boo`tstrap, `M`aterial Design, and `J`ekyll for starters.
-baseurl: "/boomj"
+baseurl: ""
 url: "https://simpligility.github.io/"
 
 # Build settings
