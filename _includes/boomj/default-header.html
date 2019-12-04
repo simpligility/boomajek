@@ -6,18 +6,16 @@
 
   <div class="collapse navbar-collapse" id="navbar">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ site.baseurl }}/index.html">Universe <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ site.baseurl }}/docs/index.html">Docs</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ site.baseurl }}/kb/index.html">Knowledge Base</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" href="{{ site.baseurl }}/contact.html">Contact</a>
+      {% for item in site.data.header-nav %}
+        {% assign current = nil %}
+        {% assign strippedcontext = link.context | remove: "/" %}
+        {% if urlpieces[1] contains strippedcontext %}  <!--this will break if context isn't in the first part of the url-->
+          {% assign current = 'active' %}
+        {% endif %}
+        <li class="nav-item {{ current }}">
+            <a class="nav-link" href="{{ site.baseurl }}/{{ item.url}}">{{ item.title}}</a>
         </li>
+      {% endfor %}
       </ul>
   </div>
 </nav>

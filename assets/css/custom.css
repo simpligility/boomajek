@@ -8,3 +8,6 @@
   background-color: #D3D7DA;
 }
 
+.nav-link {
+  text-transform: none;
+}
