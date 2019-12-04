@@ -1,12 +1,16 @@
 {% include boomj/html-head.html %}
 
-{% if page.header %}
-  {% include {{ page.header }} %}
+{% if site.data.boomj.global-header %}
+  {% include {{ site.data.boomj.global-header }} %}
+{% else  %}
+  {% include boomj/default-header.html %}
 {% endif %}
 <div class="container">
   {{ content }}
 </div>
-{% if page.footer %}
-  {% include {{ page.footer }} %}
+{% if site.data.boomj.global-footer %}
+  {% include {{ site.data.boomj.global-footer }} %}
+{% else  %}
+  {% include boomj/default-footer.html %}
 {% endif %}
 {% include boomj/html-end.html %}

@@ -1,0 +1,6 @@
+## Boomj specific config
+
+logo: assets/img/starburst-reverse.png
+css: assets/css/custom.css
+global-header: 
+global-footer: custom-footer.html

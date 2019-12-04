@@ -8,11 +8,6 @@ baseurl: ""
 url: "https://simpligility.github.io/"
 repo: https://github.com/simpligility/boomj
 
-## Boomj config
-
-logo: assets/img/starburst-reverse.png
-css: assets/css/custom.css
-
 # Jekyll config
 
 plugins:

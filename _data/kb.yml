@@ -1,0 +1,11 @@
+- title: Presto Administration
+  pages:
+    - title: K8s installation
+- title: Presto Security
+  pages:
+    - title: Introduction
+    - title: Installation
+    - title: Data Source Management
+    - title: Cluster Management
+    - title: User Management
+    - title: Security

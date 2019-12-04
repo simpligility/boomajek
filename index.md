@@ -1,12 +1,11 @@
 ---
 layout: boomj/default
-header: default-header.html
-footer: default-footer.html
 ---
 
 # Starburst Universe
 
-Let there be some content.
+Learn everything there is to know about Starburst Enterprise Presto. Use Mission
+Control to get it running on Kubernetes or AWS 
 
 
 <main role="main" class="inner cover">
