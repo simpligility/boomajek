@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/boomj/css/roboto.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/boomj/css/material-icons.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/boomj/css/bootstrap-material-design.min.css" >
+    {% if site.css %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/{{ site.css}}" >
+    {% endif %}
+    <title>
+      {% if page.title %}
+        {{ page.title }} &middot; {{ site.title }}
+      {% else %}
+        {{ site.title }} &middot; {{ site.description }}
+      {% endif %}
+    </title>
+  </head>
+  <body>
