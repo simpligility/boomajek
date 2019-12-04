@@ -1,11 +1,20 @@
+# Standard (or close to standard) Jekyll variables
+
 title: boomj
 email: manfred@simpligility.com
 description: >- # this means to ignore newlines until "baseurl:"
   A template static site setup using `Boo`tstrap, `M`aterial Design, and `J`ekyll for starters.
 baseurl: ""
 url: "https://simpligility.github.io/"
+repo: https://github.com/simpligility/boomj
 
-# Build settings
+## Boomj config
+
+logo: assets/img/starburst-reverse.png
+css: assets/css/custom.css
+
+# Jekyll config
+
 plugins:
   - jekyll-feed
 
