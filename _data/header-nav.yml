@@ -1,12 +1,12 @@
 - title: Universe
-  url: index.html
+  url: index
   context: /
 - title: Documentation
-  url: docs/index.html
+  url: index
   context: /docs/
 - title: Knowledge Base
-  url: kb/index.html
+  url: index
   context: /kb/
 - title: Contact
-  url: contact.html
+  url: contact
   context: /
