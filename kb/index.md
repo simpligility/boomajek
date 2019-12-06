@@ -2,7 +2,7 @@
 layout: boomj/docs
 title:  Knowledge Base
 toc: false
-nav: {{ site.data.kb }}
+nav: kb
 ---
 
 # {{ page.title }}

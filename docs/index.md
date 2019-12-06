@@ -1,7 +1,7 @@
 ---
 layout: boomj/docs
 title:  Starburst Universe Docs
-nav: {{ site.data.docs }}
+nav: docs
 ---
 
 # {{ page.title }}

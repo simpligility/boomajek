@@ -2,7 +2,7 @@
 layout: boomj/docs
 title:  Question Z
 toc: true
-nav: {{ site.data.kb }}
+nav: kb
 ---
 
 # {{ page.title }}

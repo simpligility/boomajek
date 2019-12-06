@@ -2,7 +2,7 @@
 {% assign rawpagename = nameArray[0] %}
 
 <nav class="bd-links" id="bd-docs-nav">
-  {% for group in site.data.kb %}
+  {% for group in site.data.docs[page.nav] %}
   {% assign active = nil %}
   {% if page.dir == group.context %}
     {% assign active = 'active' %}
