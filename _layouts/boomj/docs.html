@@ -1,21 +1,43 @@
----
-layout: boomj/default
----
+{% include boomj/html-head.html %}
 
-<!-- <div class="container-fluid"> -->
-  <!-- <div class="row flex-xl-nowrap"> -->
-    <!-- <div class="col-12 col-md-3 col-xl-2 bd-sidebar"> -->
-      <!-- {% include boomj/docs-sidebar.html %} -->
-    <!-- </div> -->
+<body class="bd-docs" data-spy="scroll" data-target=".bd-sidenav-active">
+  <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+    <div class="container">
+      <span class="skiplink-text">Skip to main content</span>
+    </div>
+  </a>
+  
+{% if site.data.boomj.global-header %}
+  {% include {{ site.data.boomj.global-header }} %}
+{% else  %}
+  {% include boomj/default-header.html %}
+{% endif %}
+  
+<div class="container-fluid">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+        sidebar
+        {% include boomj/docs-sidebar.html %}
+    </div>
 
-    <!-- {% if page.toc %} -->
-      <!-- <div class="d-none d-xl-block col-xl-2 bd-toc"> -->
-        <!-- {{ content | toc_only }} -->
-      <!-- </div> -->
-    <!-- {% endif %} -->
+    {% if page.toc %}
+      <div class="d-none d-xl-block col-xl-2 bd-toc">
+        toc
+        {{ content | toc_only }}
+      </div>
+    {% endif %}
 
-    <!-- <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main"> -->
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
       {{ content }}
-    <!-- </main> -->
-  <!-- </div> -->
-<!-- </div> -->
+    </main>
+  </div>
+</div>
+
+
+{% if site.data.boomj.global-footer %}
+  {% include {{ site.data.boomj.global-footer }} %}
+{% else  %}
+  {% include boomj/default-footer.html %}
+{% endif %}
+{% include boomj/html-end.html %}
+

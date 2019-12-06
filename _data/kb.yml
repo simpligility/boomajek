@@ -1,11 +1,22 @@
-- title: Presto Administration
-  pages:
-    - title: K8s installation
-- title: Presto Security
-  pages:
-    - title: Introduction
-    - title: Installation
-    - title: Data Source Management
-    - title: Cluster Management
-    - title: User Management
-    - title: Security
+- title: Topic 1
+  url: index
+  context: /kb/topic1/
+  sub:
+    - title: Topic 1 Overview
+      url: index
+    - title: Question A
+      url: questiona
+    - title: Question B
+      url: questionb
+- title: Topic 2
+  url: index
+  context: /kb/topic2/
+  sub:
+    - title: Topic 1 Overview
+      url: index
+    - title: Question X
+      url: questionx
+    - title: Question Y
+      url: questiony
+    - title: Question Z
+      url: questionz

@@ -1,11 +1,28 @@
 - title: Presto Administration
-  pages:
-    - title: K8s installation
+  url: index
+  context: /docs/admin/
+- title: Presto UI
+  url: index
+  context: /docs/presto-ui/
 - title: Mission Control
-  pages:
+  url: index
+  context: /docs/mission-control/
+  sub:
     - title: Introduction
+      url: index
+      context: /docs/mission-control/
     - title: Installation
+      url: installation
+      context: /docs/mission-control/
     - title: Data Source Management
+      url: data-source-management
+      context: /docs/mission-control/
     - title: Cluster Management
+      url: cluster-management
+      context: /docs/mission-control/
     - title: User Management
+      url: user-management
+      context: /docs/mission-control/
     - title: Security
+      url: security
+      context: /docs/mission-control/

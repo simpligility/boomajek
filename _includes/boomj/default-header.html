@@ -6,7 +6,7 @@
   
   {% assign nameArray = page.name | split: '.' %}
   {% assign rawpagename = nameArray[0] %}
-  <!--<p style="color: white">URL: {{ page.url }}  dir: {{ page.dir }} name: {{page.name}} rawpagename: {{ rawpagename }}</p>-->
+  <p style="color: white">URL: {{ page.url }}  dir: {{ page.dir }} name: {{page.name}} rawpagename: {{ rawpagename }}</p>
   <div class="collapse navbar-collapse" id="navbar">
     <ul class="navbar-nav mr-auto">
       {% for item in site.data.header-nav %}
